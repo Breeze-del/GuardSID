@@ -13,7 +13,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 
-class RQVAE(nn.Module):
+class PGRQ(nn.Module):
     def __init__(self,
                  in_dim=16,
                  num_emb_list=[32,32,32],
@@ -33,7 +33,7 @@ class RQVAE(nn.Module):
                  beta=0.25,
                  diversity_loss=0.0,
                  ):
-        super(RQVAE, self).__init__()
+        super(PGRQ, self).__init__()
 
         self.in_dim = in_dim
         self.num_emb_list = num_emb_list

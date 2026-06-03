@@ -7,11 +7,11 @@ The following components are already available:
 
 ---
 
-### **RQ-VAE Module**
+### **PGRQ Module**
 
-The core implementation of the Residual Vector Quantized Variational Autoencoder (RQ-VAE) is provided.
+The core implementation of the Prefix-Guarded Residual Quantization (PGRQ) is provided.
 
-* using `code/train_rqvae.py` to train a custom codebook.
+* using `code/train_pgrq.py` to train a custom codebook.
 * After training, use `codebook.py` to generate the mapping from discrete token IDs to semantic IDs.
 
 ---

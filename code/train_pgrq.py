@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 import pandas as pd
-from RQVAE.rqvae import RQVAE
+from PGRQ.pgrq import PGRQ
 from POIdataset import EmbDataset
 import os
 import random
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     """build dataset"""
     data = EmbDataset(args.data_path)
     input_dim = data[0][1].shape[0]
-    model = RQVAE(
+    model = PGRQ(
             in_dim=input_dim, 
             num_emb_list=args.num_emb_list, 
             e_dim=args.e_dim,

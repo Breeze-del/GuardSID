@@ -1,7 +1,7 @@
 import torch
 from torch.utils.data import DataLoader
 import pandas as pd
-from RQVAE.rqvae import RQVAE
+from PGRQ.pgrq import PGRQ
 from POIdataset import EmbDataset
 import csv
 from collections import Counter
@@ -89,7 +89,7 @@ if __name__ == '__main__':
     checkpoint = torch.load(best_collision_ckpt_file, map_location=args.device, weights_only=False)
    
     args = checkpoint["args"]
-    model = RQVAE(
+    model = PGRQ(
             in_dim=input_dim, 
             num_emb_list=args.num_emb_list, 
             e_dim=args.e_dim,
