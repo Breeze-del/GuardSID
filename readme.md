@@ -1,5 +1,5 @@
 
-# V1 Release
+# Code Release
 
 This repository contains the official implementation of the paper *“GuardSID: Exposure-Guarded Semantic ID for Generative Next POI Recommendation.”*
 
