@@ -29,13 +29,13 @@ To reproduce our data pipeline, please follow the steps below:
    Download the dataset from the LLM4POI repository.
 
 2. **Generate POI metadata**  
-   Run the following notebook to obtain `poi_info.csv`: `V1/datasets/dataprocess.ipynb`
+   Run the following notebook to obtain `poi_info.csv`
 
 3. **Generate Semantic IDs (SIDs)**  
 Execute the codebook quantization module to obtain SID representations for POIs.
 
 4. **Prepare LLM training data**  
-Run the following notebook to construct the final dataset for LLM fine-tuning: `V1/datasets/llm_dataprocess.ipynb`
+Run the following notebook to construct the final dataset for LLM fine-tuning.
 
 ---
 
